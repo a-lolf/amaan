@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio showcasing my skills as a Python backend developer with various projects.">
+    <meta name="keywords" content="Portfolio, Python, Flask, Django, Web Development">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .hover:scale-105 {
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-6">
+        <h1 class="text-4xl text-center font-bold">Welcome to My Portfolio</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+                <!-- <li><a href="#about" aria-label="About section" class="hover:underline">About</a></li> -->
+                <li><a href="#projects" aria-label="Projects section" class="hover:underline">Projects</a></li>
+                <li><a href="#skills" aria-label="Skills section" class="hover:underline">Skills</a></li>
+                <!-- <li><a href="#education" aria-label="Education section" class="hover:underline">Education</a></li> -->
+                <li><a href="#experience" aria-label="Experience section" class="hover:underline">Experience</a></li>
+                <li><a href="#contact" aria-label="Contact section" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto p-6">
+        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700">I'm a Python backend developer with a passion for building web applications. I enjoy solving complex problems and creating efficient solutions. With experience in frameworks like Flask and Django, I strive to write clean, maintainable code.</p>
+        </section>
+        
+        <section id="projects" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
+                    <h3 class="font-bold text-xl">Project 1: Task Tracker</h3>
+                    <p>A web application built with Flask that helps users manage their daily tasks efficiently. Features include user authentication, task management, and notifications.</p>
+                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
+                    <h3 class="font-bold text-xl">Project 2: E-commerce API</h3>
+                    <p>A RESTful API built using Django REST Framework that provides endpoints for product management, user authentication, and order processing.</p>
+                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
+                    <h3 class="font-bold text-xl">Project 3: Blog Platform</h3>
+                    <p>A full-featured blog platform created with Flask, allowing users to create, edit, and delete posts. Includes a comment section and user profiles.</p>
+                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
+                </div>
+                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
+                    <h3 class="font-bold text-xl">Project 4: Weather App</h3>
+                    <p>A weather forecasting application that utilizes a third-party API to provide real-time weather updates based on user location.</p>
+                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <ul class="list-disc pl-5">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Django</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>PostgreSQL</li>
+                <li>RESTful APIs</li>
+            </ul>
+        </section>
+
+        <section id="education" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Education</h2>
+            <p><strong>Bachelor of Science in Computer Science</strong><br>XYZ University, 2018</p>
+            <p><strong>Certification in Python Development</strong><br>ABC Institute, 2020</p>
+        </section>
+
+        <section id="experience" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+            <p><strong>Backend Developer</strong><br>Tech Solutions Inc. | 2019 - Present</p>
+            <ul class="list-disc pl-5">
+                <li>Developed and maintained RESTful APIs for various applications.</li>
+                <li>Collaborated with front-end developers to integrate user-facing elements.</li>
+                <li>Participated in code reviews and contributed to team knowledge sharing.</li>
+            </ul>
+            <p><strong>Intern</strong><br>Web Development Co. | Summer 2018</p>
+            <ul class="list-disc pl-5">
+                <li>Assisted in developing web applications using Flask.</li>
+                <li>Conducted testing and debugging of applications.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="text-gray-700">Feel free to reach out via email:</p>
+            <p>Email: <a href="mailto:your-email@example.com" class="text-blue-500 hover:underline">your-email@example.com</a></p>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+</body>
+</html>
