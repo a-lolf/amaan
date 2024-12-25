@@ -3,115 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A portfolio showcasing my skills as a Python backend developer with various projects.">
-    <meta name="keywords" content="Portfolio, Python, Flask, Django, Web Development">
+    <title>Amaan Ansari - Python Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>My Portfolio</title>
-    <style>
-        .fade-in {
-            animation: fadeIn 1s forwards;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        .hover:scale-105 {
-            transition: transform 0.2s;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+      <style>
+          .progress-bar {
+            height: 8px;
+            background-color: #e2e8f0; /* Light gray background */
+            border-radius: 4px;
+          }
+          .progress-bar-fill {
+              height: 100%;
+              border-radius: 4px;
+              transition: width 0.5s ease;
+           }
+          body {
+             font-family: 'Poppins', sans-serif;
+         }
+         h1, h2, h3 {
+           font-family: 'Poppins', sans-serif;
+         }
+         p {
+              font-family: 'Roboto', sans-serif;
+         }
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gray-800 text-white p-6">
-        <h1 class="text-4xl text-center font-bold">Welcome to My Portfolio</h1>
-        <nav class="mt-4">
-            <ul class="flex justify-center space-x-6">
-                <!-- <li><a href="#about" aria-label="About section" class="hover:underline">About</a></li> -->
-                <li><a href="#projects" aria-label="Projects section" class="hover:underline">Projects</a></li>
-                <li><a href="#skills" aria-label="Skills section" class="hover:underline">Skills</a></li>
-                <!-- <li><a href="#education" aria-label="Education section" class="hover:underline">Education</a></li> -->
-                <li><a href="#experience" aria-label="Experience section" class="hover:underline">Experience</a></li>
-                <li><a href="#contact" aria-label="Contact section" class="hover:underline">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-20 relative overflow-hidden">
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Hi, I'm Amaan Ansari</h1>
+            <p class="text-xl mb-8">A passionate Python Developer ready to bring your ideas to life.</p>
+            <a href="#contact" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-full hover:bg-blue-100 transition duration-300">Let's Connect</a>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-10 blur-2xl"></div>
     </header>
-    <main class="container mx-auto p-6">
-        <section id="about" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">About Me</h2>
-            <p class="text-gray-700">I'm a Python backend developer with a passion for building web applications. I enjoy solving complex problems and creating efficient solutions. With experience in frameworks like Flask and Django, I strive to write clean, maintainable code.</p>
-        </section>
-        
-        <section id="projects" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
-                    <h3 class="font-bold text-xl">Project 1: Task Tracker</h3>
-                    <p>A web application built with Flask that helps users manage their daily tasks efficiently. Features include user authentication, task management, and notifications.</p>
-                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
-                </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
-                    <h3 class="font-bold text-xl">Project 2: E-commerce API</h3>
-                    <p>A RESTful API built using Django REST Framework that provides endpoints for product management, user authentication, and order processing.</p>
-                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
-                </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
-                    <h3 class="font-bold text-xl">Project 3: Blog Platform</h3>
-                    <p>A full-featured blog platform created with Flask, allowing users to create, edit, and delete posts. Includes a comment section and user profiles.</p>
-                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
-                </div>
-                <div class="bg-gray-200 p-4 rounded-lg shadow hover:scale-105">
-                    <h3 class="font-bold text-xl">Project 4: Weather App</h3>
-                    <p>A weather forecasting application that utilizes a third-party API to provide real-time weather updates based on user location.</p>
-                    <a href="#" class="inline-block mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Project</a>
-                </div>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="container mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                <p class="text-gray-700 mb-6">
+                    I'm a dedicated Python developer with experience in web development, scripting, data analysis, and automation. My goal is to create efficient, scalable, and maintainable solutions. I'm passionate about clean code and always eager to learn new technologies.
+                </p>
+                <p class="text-gray-700 mb-6">
+                  I have experience working with technologies like Django, Flask, FastAPI, Pandas, Numpy, Scikit-learn, and AWS services
+                 </p>
+                <p class="text-gray-700">
+                    Open to new opportunities and challenges, both in full-time positions and freelance projects.
+                </p>
             </div>
-        </section>
+            <div class="flex justify-center items-center">
+              <img src="amaan_dp.jpg" alt="Your Profile" class="rounded-full w-64 h-64 object-cover shadow-lg">
+            </div>
+        </div>
+    </section>
 
-        <section id="skills" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">Skills</h2>
-            <ul class="list-disc pl-5">
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>PostgreSQL</li>
-                <li>RESTful APIs</li>
-            </ul>
-        </section>
 
-        <section id="education" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">Education</h2>
-            <p><strong>Bachelor of Science in Computer Science</strong><br>XYZ University, 2018</p>
-            <p><strong>Certification in Python Development</strong><br>ABC Institute, 2020</p>
-        </section>
+    <!-- Skills Section -->
+  <section id="skills" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-4 text-gray-800">Backend Development</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                      <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                              <i class="fab fa-python text-4xl text-blue-500 mb-2"></i>
+                                <p class="font-semibold">Python</p>
+                                 <div class="progress-bar w-full mt-2">
+                                     <div class="progress-bar-fill bg-blue-500" style="width: 90%;"></div>
+                                 </div>
+                            </div>
+                            <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                              <i class="fas fa-code text-4xl text-green-500 mb-2"></i>
+                                <p class="font-semibold">Web Dev (Django)</p>
+                                  <div class="progress-bar w-full mt-2">
+                                         <div class="progress-bar-fill bg-green-500" style="width: 75%;"></div>
+                                   </div>
+                           </div>
+                           <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                           <i class="fas fa-code text-4xl text-purple-500 mb-2"></i>
+                            <p class="font-semibold">Web Dev (FastAPI)</p>
+                                <div class="progress-bar w-full mt-2">
+                                         <div class="progress-bar-fill bg-purple-500" style="width: 60%;"></div>
+                                   </div>
+                         </div>
+                       <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                              <i class="fas fa-database text-4xl text-yellow-500 mb-2"></i>
+                                <p class="font-semibold">Databases (SQL)</p>
+                                    <div class="progress-bar w-full mt-2">
+                                         <div class="progress-bar-fill bg-yellow-500" style="width: 85%;"></div>
+                                    </div>
+                          </div>
+                            <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                                <i class="fab fa-docker text-4xl text-gray-800 mb-2"></i>
+                                <p class="font-semibold">Docker</p>
+                                 <div class="progress-bar w-full mt-2">
+                                    <div class="progress-bar-fill bg-gray-800" style="width: 70%;"></div>
+                                 </div>
+                           </div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                           <i class="fas fa-cloud text-4xl text-purple-500 mb-2"></i>
+                            <p class="font-semibold">AWS</p>
+                              <div class="progress-bar w-full mt-2">
+                                  <div class="progress-bar-fill bg-purple-500" style="width: 60%;"></div>
+                              </div>
+                         </div>
+                 </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Data and Automation</h3>
+                     <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                             <i class="fas fa-chart-line text-4xl text-red-500 mb-2"></i>
+                              <p class="font-semibold">Data Analysis</p>
+                              <div class="progress-bar w-full mt-2">
+                                <div class="progress-bar-fill bg-red-500" style="width: 80%;"></div>
+                              </div>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                           <i class="fas fa-robot text-4xl text-blue-400 mb-2"></i>
+                            <p class="font-semibold">Automation</p>
+                            <div class="progress-bar w-full mt-2">
+                                 <div class="progress-bar-fill bg-blue-400" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                      <div class="p-4 bg-white rounded-lg shadow-md flex flex-col items-center justify-center">
+                           <i class="fas fa-flask text-4xl text-green-400 mb-2"></i>
+                              <p class="font-semibold">Machine Learning</p>
+                               <div class="progress-bar w-full mt-2">
+                                   <div class="progress-bar-fill bg-green-400" style="width: 65%;"></div>
+                              </div>
+                        </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </section>
 
-        <section id="experience" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">Experience</h2>
-            <p><strong>Backend Developer</strong><br>Tech Solutions Inc. | 2019 - Present</p>
-            <ul class="list-disc pl-5">
-                <li>Developed and maintained RESTful APIs for various applications.</li>
-                <li>Collaborated with front-end developers to integrate user-facing elements.</li>
-                <li>Participated in code reviews and contributed to team knowledge sharing.</li>
-            </ul>
-            <p><strong>Intern</strong><br>Web Development Co. | Summer 2018</p>
-            <ul class="list-disc pl-5">
-                <li>Assisted in developing web applications using Flask.</li>
-                <li>Conducted testing and debugging of applications.</li>
-            </ul>
-        </section>
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-16">
+        <h2 class="text-3xl font-semibold mb-8 text-center">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col relative">
+              <img src="amaan_dp.jpg" alt="Project 1" class="w-full h-48 object-cover">
+              <div class="p-6 flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Project 1 Title</h3>
+              </div>
+              <div class="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 transition-opacity duration-300 flex flex-col items-center justify-center">
+                <p class="text-gray-200 mb-2 p-4 text-center">
+                  Short description of your project. Highlight your role and the technologies used.
+                </p>
+                <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold">
+                  View Project
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project Card 2 -->
+             
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <img src="amaan_dp.jpg" alt="Project 1" class="w-full h-48 object-cover" loading="lazy">
+              <div class="p-6 relative flex-grow flex items-center">
+                  <h3 class="text-xl font-semibold mb-2">Project 1 Title</h3>
+                  <div class="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 transition-opacity duration-300 flex flex-col items-center justify-center">
+                      <p class="text-gray-200 mb-2 p-2 text-center">Short description of your project. Highlight your role and the technologies used.</p>
+                      <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold">View Project</a>
+                  </div>
+              </div>
+          </div>
 
-        <section id="contact" class="bg-white p-6 rounded-lg shadow-md mb-6 fade-in">
-            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-            <p class="text-gray-700">Feel free to reach out via email:</p>
-            <p>Email: <a href="mailto:your-email@example.com" class="text-blue-500 hover:underline">your-email@example.com</a></p>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-white text-center p-4">
-        <p>&copy; 2023 My Portfolio</p>
-    </footer>
+              <!-- Project Card 3 -->
+               <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <img src="amaan_dp.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6 relative flex-grow flex items-center">
+                        <h3 class="text-xl font-semibold mb-2">Project 3 Title</h3>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 transition-opacity duration-300 flex flex-col items-center justify-center">
+                             <p class="text-gray-200 mb-2 p-2 text-center">Short description of your project. Highlight your role and the technologies used.</p>
+                             <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold">View Project</a>
+                        </div>
+                    </div>
+               </div>
+                 <!-- Project Card 4 -->
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                        <img src="amaan_dp.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                         <div class="p-6 relative flex-grow flex items-center">
+                                 <h3 class="text-xl font-semibold mb-2">Project 4 Title</h3>
+                                 <div class="absolute inset-0 bg-gray-900 bg-opacity-0 hover:bg-opacity-80 transition-opacity duration-300 flex flex-col items-center justify-center">
+                                      <p class="text-gray-200 mb-2 p-2 text-center">Short description of your project. Highlight your role and the technologies used.</p>
+                                      <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold">View Project</a>
+                                 </div>
+                         </div>
+                    </div>
+                  <!-- Project Card 5 -->
+                  <div class="max-w-[400px] m-5 group">
+                    <div class="relative bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                      <img 
+                        src="amaan_dp.jpg" 
+                        alt="Project 1" 
+                        class="w-full h-48 object-cover" 
+                        loading="lazy"
+                      >
+                      <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Project 1 Title</h3>
+                        <!-- Added description that appears on hover -->
+                        <p class="text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm line-clamp-2">
+                          Short description of your project. Highlight your role and the technologies used.
+                        </p>
+                      </div>
+                      <div class="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <!-- <p class="text-gray-200 mb-2 p-2 text-center max-w-[80%]">Short description of your project. Highlight your role and the technologies used.</p> -->
+                        <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold no-underline">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Project Card 6 -->
+                <div class="max-w-[400px] m-5">
+                  <div class="relative bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img 
+                      src="amaan_dp.jpg" 
+                      alt="Project 1" 
+                      class="w-full h-48 object-cover" 
+                      loading="lazy"
+                    >
+                    <div class="p-6">
+                      <h3 class="text-xl font-semibold mb-2">Project 1 Title</h3>
+                    </div>
+                    <div class="absolute inset-0 bg-gray-900/0 group-hover:bg-gray-900/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <p class="text-gray-200 mb-2 p-2 text-center max-w-[80%]">Short description of your project. Highlight your role and the technologies used.</p>
+                      <a href="#" class="text-blue-300 hover:text-blue-200 font-semibold no-underline">View Project</a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Contact Me</h2>
+            <p class="text-lg mb-8">
+                I'm open to new opportunities and collaborations. Reach out!
+            </p>
+            <div class="space-y-4">
+              <a href="mailto:your.email@example.com" class="hover:text-gray-300"> <i class="fas fa-envelope mr-2"></i>  your.email@example.com </a>
+              <a href="https://github.com/yourgithub" target="_blank" class="hover:text-gray-300"> <i class="fab fa-github mr-2"></i> GitHub </a>
+              <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="hover:text-gray-300"> <i class="fab fa-linkedin mr-2"></i> LinkedIn </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-gray-400 text-center py-4">
+    <p>&copy; 2024 Amaan Ansari. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
