@@ -1,0 +1,19 @@
+.progress-bar {
+    height: 8px;
+    background-color: #e2e8f0; /* Light gray background */
+    border-radius: 4px;
+  }
+  .progress-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.5s ease;
+   }
+  body {
+     font-family: 'Poppins', sans-serif;
+ }
+ h1, h2, h3 {
+   font-family: 'Poppins', sans-serif;
+ }
+ p {
+      font-family: 'Roboto', sans-serif;
+ }
