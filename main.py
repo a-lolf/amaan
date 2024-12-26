@@ -40,7 +40,7 @@ def is_valid_url(url):
 
 
 @app.route("/url_shortener", methods=["GET", "POST"])
-def index():
+def url_shortener():
     if request.method == "POST":
         long_url = request.form["long_url"]
         custom_code = request.form.get("custom_code", "").strip()
