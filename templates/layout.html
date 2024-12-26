@@ -137,11 +137,11 @@
         <h2 class="text-3xl font-semibold mb-8 text-center">My Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card 1 -->
-            {% with project_title="Project 1 Title", project_image=url_for('static',filename='amaan_dp.jpg'), description=False %}
+            {% with project_title="URL Shortener", redirect_to={{ url_shortener}}, project_image=url_for('static',filename='amaan_dp.jpg'), description=False %}
                 {% include "project_card.html" %}
             {% endwith %}
             <!-- Project Card 2 -->
-            {% with project_title="Project 2 Title", project_image=url_for('static',filename='amaan_dp.jpg'), description=False %}
+            {% with project_title="URL Shortener", redirect_to={{ url_shortener}}, project_image=url_for('static',filename='amaan_dp.jpg'), description=False %}
                 {% include "project_card.html" %}
             {% endwith %}
         </div>
